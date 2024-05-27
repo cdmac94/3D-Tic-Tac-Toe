@@ -1,14 +1,14 @@
 import { Room, Client } from '@colyseus/core';
 import { MyRoomState } from './schema/MyRoomState';
-import { RoomLogic } from './roomlogic';
+// import { RoomLogic } from './roomlogic';
 
 export class TicTacToe extends Room<MyRoomState> {
   maxClients = 2;
-  private roomLogic: RoomLogic;
+  // private roomLogic: RoomLogic;
 
   onCreate(options: any) {
     this.setState(new MyRoomState());
-    this.roomLogic = new RoomLogic();
+    // this.roomLogic = new RoomLogic();
     
 
     this.onMessage('gamefield', (client, message: Array<number>) => {
@@ -23,6 +23,11 @@ export class TicTacToe extends Room<MyRoomState> {
 
   onJoin(client: Client, options: any) {
     console.log(this.clients.length);
+
+    if (options.playerName === '') {
+      client.send('error joining', { message: 'No player name provided.' });
+      return;
+    }
 
     if (this.clients.length === 1) {
       client.send('playerNumber', { number: 1 });

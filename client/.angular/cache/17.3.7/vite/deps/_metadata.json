@@ -1,0 +1,73 @@
+{
+  "hash": "0910d753",
+  "configHash": "ae55ecf7",
+  "lockfileHash": "94e8921f",
+  "browserHash": "1b89ab2d",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "3e763c2f",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "d785f481",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "28051bee",
+      "needsInterop": false
+    },
+    "babylonjs": {
+      "src": "../../../../../node_modules/babylonjs/babylon.js",
+      "file": "babylonjs.js",
+      "fileHash": "342f9a54",
+      "needsInterop": true
+    },
+    "colyseus.js": {
+      "src": "../../../../../node_modules/colyseus.js/lib/index.js",
+      "file": "colyseus__js.js",
+      "fileHash": "0ff9144f",
+      "needsInterop": true
+    },
+    "rxjs": {
+      "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "6340d109",
+      "needsInterop": false
+    },
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "e8a89b02",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "f4ef0712",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-RGKNF6UU": {
+      "file": "chunk-RGKNF6UU.js"
+    },
+    "chunk-MT6KUOPX": {
+      "file": "chunk-MT6KUOPX.js"
+    },
+    "chunk-EYRK6KYF": {
+      "file": "chunk-EYRK6KYF.js"
+    },
+    "chunk-WSA2QMXP": {
+      "file": "chunk-WSA2QMXP.js"
+    },
+    "chunk-KW76NYFZ": {
+      "file": "chunk-KW76NYFZ.js"
+    }
+  }
+}

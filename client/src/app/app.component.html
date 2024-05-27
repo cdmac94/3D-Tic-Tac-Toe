@@ -1,0 +1,9 @@
+<section class="welcome-holder">
+  <div class="welcome-block">
+    <h1>Welcome to 3D Tic-Tac-Toe!</h1>
+    <h3>Enter your name and click below to join the game!</h3>
+    <input id="name-input" type="text" placeholder="Enter your name" [(ngModel)]="playerName">
+    <button class="join-butt" (click)="joinGame()">Join Game</button>
+  </div>
+</section>
+<router-outlet></router-outlet>

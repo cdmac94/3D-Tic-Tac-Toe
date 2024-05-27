@@ -1,0 +1,51 @@
+<section class="overlay">
+  <section class="board-holder">
+    <button (click)="leaveRoom()" class="leave-room">X</button>
+    <h1 class="game-title">Tic-Tac-Toe</h1>
+    <div class="board">
+      <canvas id="gameCanvas"></canvas>
+    </div>
+    <div class="player-message">
+      <div *ngIf="gameState === 6" class="waiting">
+        <h3>Waiting for another player...</h3>
+      </div>
+      <div *ngIf="gameState === 2 && playerNumber === 1" class="waiting-move">
+        <h3>Waiting for the other player to make a move!</h3>
+      </div>
+      <div *ngIf="gameState === 1 && playerNumber === 2" class="waiting-move">
+        <h3>Waiting for the other player to make a move!</h3>
+      </div>
+      <div *ngIf="gameState === 2 && playerNumber === 2" class="waiting-move">
+        <h3>Your turn!</h3>
+      </div>
+      <div *ngIf="gameState === 1 && playerNumber === 1" class="waiting-move">
+        <h3>Your turn!</h3>
+      </div>
+      <section *ngIf="gameState === 3 || gameState === 4 || gameState === 5" class="game-over">
+        <div *ngIf="gameState === 3 && playerNumber === 1" class="game-over">
+          <h3>You won!</h3>
+          <button class="game-end" (click)="leaveRoom()">Leave</button>
+        </div>
+        <div *ngIf="gameState === 4 && playerNumber === 2" class="game-over">
+          <h3>You won!</h3>
+          <button class="game-end" (click)="leaveRoom()">Leave</button>
+        </div>
+        <div *ngIf="gameState === 3 && playerNumber === 2" class="game-over">
+          <h3>Sorry! <br/> You lost!</h3>
+          <button class="game-end" (click)="leaveRoom()">Leave</button>
+        </div>
+        <div *ngIf="gameState === 4 && playerNumber === 1" class="game-over">
+          <h3>Sorry! <br/> You lost!</h3>
+          <button class="game-end" (click)="leaveRoom()">Leave</button>
+        </div>
+        <div *ngIf="gameState === 5" class="game-over">
+          <h3>It's a draw!</h3>
+          <button class="game-end" (click)="leaveRoom()">Leave</button>
+        </div>
+      </section>
+    </div>
+
+
+  </section>
+</section>
+
